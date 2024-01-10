@@ -1,0 +1,31 @@
+Laravel:
+
+1 - composer install
+2 - composer install --ignore-platform-reqs (if error when use compand composer install alone)
+
+
+Vue:
+
+1 - npm install --legacy-peer-deps
+2 - npm run dev
+3 - npm run watch (if node error run (export NODE_OPTIONS=--openssl-legacy-provider))
+
+4 - how i can solve it
+if linux please run this comand before steps od vue :
+
+
+if you want to refresh one table:
+
+php artisan migrate:refresh --path=database/migrations/2023_08_22_115301_create_captains_table.php
+php artisan migrate:refresh --path=database/migrations/2023_10_19_132840_create_route_schedules_table.php
+php artisan migrate:refresh --path=database/migrations/2023_10_18_083904_create_route_stations_table.php
+php artisan migrate:refresh --path=database/migrations/2023_08_30_105303_create_stations_table.php
+php artisan migrate:refresh --path=database/migrations/2023_10_14_104436_create_bus_types_table.php
+php artisan migrate:refresh --path=database/migrations/2023_12_03_085400_create_private_bookings_table.php
+php artisan migrate:refresh --path=database/migrations/2023_11_16_153932_create_customers_table.php
+php artisan migrate:refresh --path=database/migrations/2023_12_08_132026_create_bussiness_trips_table.php
+php artisan migrate:refresh --path=database/migrations/2023_11_17_203816_create_ride_bus_seats_table.php
+php artisan migrate:refresh --path=database/migrations/2023_10_19_132840_create_route_schedules_table.php
+php artisan migrate:refresh --path=database/migrations/2023_11_27_185930_create_booking_fakes_table.php
+
+
